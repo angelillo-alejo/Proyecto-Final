@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-slide',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./slide.component.scss']
 })
 export class SlideComponent {
+  @Input() addToParent!: string;
 
 }

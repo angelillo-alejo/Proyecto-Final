@@ -45,3 +45,9 @@ export class AppModule { }
 //https://github.com/ainoacp/project-shopeame-angular-front/tree/main/src/app/shared
 
 //https://github.com/bobangajicsm/E-Commerce-Store/tree/main/src/app
+
+//INSTALAR BOOSTRAP
+//npm i boostrap, luego se anade en el json, directorios 
+
+//styles:node_modules/bootstrap/dist/css/bootstrap.css
+// y scripts:  node_modules/bootstrap/dist/js/bootstrap.js
