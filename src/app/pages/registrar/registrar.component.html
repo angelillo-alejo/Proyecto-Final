@@ -2,13 +2,23 @@
     <div class="abs-center">
         <form class="col-form-label-lg p-5 ">
             <div class="mb-3 col-5">
-                <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input [(ngModel)]="email" type="email" class="form-control" paceholder="email">
+                <div class="form-text">Nunca compartiremos sus datos personales con nadie.</div>
             </div>
             <div class="mb-3 col-5">
-                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" >
+            </div>
+            <div class="mb-3 col-5">
+                <label for="firstame" class="form-label">Nombre</label>
+                <input type="text" class="form-control" paceholder="text">
+                
+            </div>
+            <div class="mb-3 col-5">
+                <label for="lastname" class="form-label">Apellido</label>
+                <input type="text" class="form-control" paceholder="text">
+                
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -18,3 +28,6 @@
         </form>
     </div>
 </div>
+
+
+<!-- Unir la parte logica de este formulario -->

@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./slide.component.scss']
 })
 export class SlideComponent {
-  @Input() addToParent!: string;
+  @Input() addToParent!: string; //Componente hijo, se lo paso al padre por Input
 
 }
