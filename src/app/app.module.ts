@@ -34,7 +34,9 @@ import { HeaderComponent } from './core/header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -50,6 +52,6 @@ export class AppModule { }
 
 //INSTALAR BOOSTRAP
 //npm i boostrap, luego se anade en el json, directorios 
-
+//para el buscador: https://es.stackoverflow.com/questions/421502/buscador-en-angular-11-con-pipe-filter
 //styles:node_modules/bootstrap/dist/css/bootstrap.css
 // y scripts:  node_modules/bootstrap/dist/js/bootstrap.js
