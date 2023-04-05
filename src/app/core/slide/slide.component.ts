@@ -1,4 +1,7 @@
 import { Component, Input } from '@angular/core';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgIf } from '@angular/common';
+
 
 @Component({
   selector: 'app-slide',
@@ -7,5 +10,6 @@ import { Component, Input } from '@angular/core';
 })
 export class SlideComponent {
   @Input() addToParent!: string; //Componente hijo, se lo paso al padre por Input
+  images = ["../../assets"];
 
 }
