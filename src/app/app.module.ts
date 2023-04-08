@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {HttpClientModule} from "@angular/common/http";
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavComponent } from './core/nav/nav.component';
@@ -36,6 +37,7 @@ import { HeaderComponent } from './core/header/header.component';
     AppRoutingModule,
     NgbModule,
     ReactiveFormsModule,
+    HttpClientModule,
     FormsModule
   ],
   providers: [],
@@ -55,3 +57,6 @@ export class AppModule { }
 //para el buscador: https://es.stackoverflow.com/questions/421502/buscador-en-angular-11-con-pipe-filter
 //styles:node_modules/bootstrap/dist/css/bootstrap.css
 // y scripts:  node_modules/bootstrap/dist/js/bootstrap.js
+
+
+// Min 1:19
