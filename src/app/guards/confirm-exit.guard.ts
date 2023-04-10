@@ -11,7 +11,7 @@ export class ConfirmExitGuard implements CanDeactivate<unknown> {
     currentRoute: ActivatedRouteSnapshot,
     currentState: RouterStateSnapshot,
     nextState?: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    return true;
+    return confirm("Estás seguro de que quieres abandonar la página?")
   }
   
 }
