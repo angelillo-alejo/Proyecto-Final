@@ -26,22 +26,21 @@ export class AuthService {
       password: password,
       firstname: firstname,
       lastname: lastname,
- 
     }
     )
   }
 
-  logout(){
+  logout(){//quita cookie
     this.cookies.delete("user")
   }
 
   setUser(user: any){
-    this.cookies.set("user",JSON.stringify(user))
+    this.cookies.set("user",JSON.stringify(user))//stringify convierte funcion en objeto
   }
 
   getUser(){
     try {
-      return JSON.parse(this.cookies.get("user"))
+      return JSON.parse(this.cookies.get("user"))//parse convierte string a objeto
     } catch (error) {
       return null
     }

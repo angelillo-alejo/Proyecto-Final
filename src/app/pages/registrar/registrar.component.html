@@ -3,26 +3,21 @@
         <form class="col-form-label-lg p-5 ">
             <div class="mb-3 col-5">
                 <label for="email" class="form-label">Correo electrónico</label>
-                <input [(ngModel)]= "email" type="email" class="form-control" paceholder="email">
+                <input [(ngModel)]="email" class="form-control" type="email" placeholder="email" name="email">
                 <div class="form-text">Nunca compartiremos sus datos personales con nadie.</div>
             </div>
             <div class="mb-3 col-5">
                 <label for="password" class="form-label">Contraseña</label>
-                <input [(ngModel)]= "password" type="password" class="form-control" >
+                <input [(ngModel)]="password" class="form-control"  type="password" placeholder="password" name="password">
             </div>
             <div class="mb-3 col-5">
                 <label for="firstname" class="form-label">Nombre</label>
-                <input [(ngModel)]= "firstname" type="text" class="form-control" paceholder="text">
+                <input [(ngModel)]="firstname" class="form-control"  type="text" placeholder="firstname" name="firstname">
                 
             </div>
             <div class="mb-3 col-5">
                 <label for="lastname" class="form-label">Apellido</label>
-                <input [(ngModel)]= "lastname" type="text" class="form-control" paceholder="text">
-                
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Verificado</label>
+                <input [(ngModel)]="lastname" class="form-control"  type="text" placeholder="lastname" name="lastname">
             </div>
             <button (click)="registrar()" type="submit" class="btn btn-primary">Registar</button>
         </form>

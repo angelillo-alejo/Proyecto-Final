@@ -19,7 +19,7 @@ export class LoginComponent {
     this.authService.login(this.email,this.password).subscribe(data=>{
       //console.log(data)
       this.error = ""
-      this.authService.setUser(data.user)
+      this.authService.setUser(data.user)//En este user se guardan las cookies
       this.router.navigateByUrl("/perfil")
     },
     ex=>{
