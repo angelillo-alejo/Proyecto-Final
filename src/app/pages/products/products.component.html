@@ -1,0 +1,20 @@
+
+<div class="product container d-flex p-5 m-5">
+<div class="row  row-cols-md-3 g-5" style="max-width: 90rem;">
+  <div class="col" *ngFor="let product of productList">
+    <div class="card h-100 d-flex justify-content-center">
+    <img src="{{product.image}}" class="card-img-top" alt="{{product.name}}">
+    <div class="container p-3 m-1">
+      <h5 class="card-title">{{product.name}}</h5>
+    <div class="container">
+      <p class="card-text">{{product.description}}</p>
+      </div>
+      <div class="container">
+        <p>Precio:{{product.price}} €</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

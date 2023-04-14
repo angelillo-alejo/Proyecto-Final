@@ -1,0 +1,9 @@
+<div >
+    <h4>{{product?.name}}</h4>
+    <img src="{{product?.image}}" alt="{{product?.name}}"><!-- Con la ? decimos que no se sabe si va a llegar informacion pero algo tiene que llegar -->
+    <p>Descripcion: {{product?.description}}</p>
+    <!-- <p>Precio: {{product?.price}}</p> -->
+    <button routerLink="/">Ir atras</button>
+    <button (click)="deleteProduct()">Borrar</button>
+</div>
+

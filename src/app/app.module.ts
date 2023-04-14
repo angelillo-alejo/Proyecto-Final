@@ -16,6 +16,12 @@ import { RegistrarComponent } from './pages/registrar/registrar.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LogoutComponent } from './pages/logout/logout.component';
+
+import { ProductsComponent } from './pages/products/products.component';
+import { ProductComponent } from './pages/product/product.component';
+import { GestionComponent } from './pages/gestion/gestion.component';
+import { DetailComponent } from './pages/gestion/detail/detail.component';
+
 import { HeaderComponent } from './core/header/header.component';
 
 @NgModule({
@@ -30,6 +36,10 @@ import { HeaderComponent } from './core/header/header.component';
     HomeComponent,
     LogoutComponent,
     HeaderComponent,
+    ProductsComponent,
+    ProductComponent,
+    GestionComponent,
+    DetailComponent,
     
   ],
   imports: [
