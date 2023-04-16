@@ -12,6 +12,13 @@ export class PerfilComponent implements OnInit {
   
   ngOnInit(): void {
     this.user= this.authService.getUser()
+    
+  }
+
+  editar(){
+    this.authService.editar(this.user.id,this.user).subscribe(()=>{
+      alert("usuario editado")
+    })
   }
 
 

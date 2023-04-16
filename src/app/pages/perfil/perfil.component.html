@@ -1,33 +1,44 @@
-<div class="card">
-
-    <div class="card-title">
+<!-- <div class="container">
+    <div class="abs-center">
         <h5>Datos de tu perfil</h5>
-    </div>
-
-    <div class="card-body">
-        <div class="form">
-            
+    <form class="col-form-label-lg p-5 ">
+        <div class="card-body">
+         <div class="form">
             <div class="form-group">
                 <label for="">Nombre</label>
-                <label class="form-control" for="">{{user.firstname}}</label>
+               <input type="text" [(ngModel)]="user.firstname"> 
             </div>
-
             <div class="form-group">
                 <label for="">Apellido</label>
-                <label class="form-control" for="">{{user.lastname}}</label>
+                <input type="text" [(ngModel)]="user.lastname"> 
             </div>
-
             <div class="form-group">
                 <label for="">Email</label>
-                <label class="form-control" for="">{{user.email}}</label>
+                <input type="text" [(ngModel)]="user.email"> 
             </div>
+            <button (click)="editar()">editar</button>
+      
+    </form>
+  </div>
+</div> -->
 
-            <div class="form-group">
-                <label for="">Edad</label>
-                <label class="form-control" for="">{{user.age}}</label>
+<div class="container">
+        <form class="col-form-control-xl p-5 m-5 needs-validation" novalidate>
+            <h3>Perfil usuario</h3>
+            <div class="mb-3 col-5">
+                <label for="name">Nombre</label>
+               <input class="form-control form-control-lg" type="text"[(ngModel)]="user.firstname" required> 
             </div>
-
+            <div class="mb-3 col-5">
+                <label for="name">Apellido</label>
+                <input class="form-control form-control-lg" type="text" [(ngModel)]="user.lastname" required> 
+            </div>
+            <div class="mb-3 col-5">
+                <label for="email">Email</label>
+                <input class="form-control form-control-lg" type="text" [(ngModel)]="user.email" required> 
+            </div>
+            <div class="col-12">
+            <button class="btn btn-primary" (click)="editar()">editar</button>
         </div>
-    </div>
-
+        </form>
 </div>
